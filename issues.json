@@ -1,0 +1,95 @@
+[
+  {
+    "number": 1,
+    "date": "2026-08-16",
+    "title": "My LLM judge picked whichever answer came first, 91% of the time",
+    "linkedin": "https://www.linkedin.com/pulse/my-llm-judge-picked-whichever-answer-came-first-91-time-mohammadi-b9qae/",
+    "finding": "The part I didn't expect: two of the three never once called a tie between two identical answers.",
+    "package": "judgekit",
+    "repository": "https://github.com/mohammadi-hadi/judgekit",
+    "post": "https://mohammadi.cv/blog/what-an-llm-judge-actually-does/",
+    "commands": [
+      "pip install judgekit",
+      "judgekit report judge.jsonl --out audit"
+    ],
+    "source": "issues/001-judge-slot-order.html"
+  },
+  {
+    "number": 2,
+    "date": "2026-08-22",
+    "title": "27 of the 28 emotions in GoEmotions fall below the reliability floor",
+    "linkedin": "https://www.linkedin.com/pulse/27-28-emotions-goemotions-fall-below-reliability-floor-hadi-mohammadi-r4ofe/",
+    "finding": "Given the per-rater reliability actually observed, you would need roughly 13 raters per item to produce aggregated labels that are 0.8 reliable. The dataset averages 3.6, which projects to 0.52.",
+    "package": "raterkit",
+    "repository": "https://github.com/mohammadi-hadi/raterkit",
+    "post": "https://mohammadi.cv/blog/the-labels-under-the-benchmark/",
+    "commands": [
+      "pip install raterkit",
+      "raterkit report ratings.jsonl --out audit"
+    ],
+    "source": "issues/002-labels-under-the-benchmark.html"
+  },
+  {
+    "number": 3,
+    "date": "2026-08-29",
+    "title": "HumanEval catches a real 3-point gap about one time in four",
+    "linkedin": "https://www.linkedin.com/pulse/humaneval-catches-real-3-point-gap-one-time-four-hadi-mohammadi-fvxqe/",
+    "finding": "Even at a 90% baseline, its floor is six points: the smallest true gap it catches four times in five.",
+    "package": "abeval",
+    "repository": "https://github.com/mohammadi-hadi/abeval",
+    "post": "https://mohammadi.cv/blog/what-a-benchmark-can-tell-apart/",
+    "browser": "https://mohammadi.cv/abeval/",
+    "commands": [
+      "pip install abeval",
+      "abeval power --baseline 0.75 --delta 0.03"
+    ],
+    "source": "issues/003-what-a-benchmark-can-tell-apart.html"
+  },
+  {
+    "number": 4,
+    "date": "2026-09-05",
+    "title": "Three models rated their own confidence. A constant beat all three.",
+    "linkedin": "https://www.linkedin.com/pulse/three-models-rated-own-confidence-constant-beat-all-hadi-mohammadi-hvh3e/",
+    "finding": "One of my models said 95 on 878 of its 1,000 answers and was right on 79% of them.",
+    "package": "calikit",
+    "repository": "https://github.com/mohammadi-hadi/calikit",
+    "post": "https://mohammadi.cv/blog/ask-a-model-how-sure-it-is/",
+    "browser": "https://mohammadi.cv/calikit/",
+    "commands": [
+      "pip install calikit",
+      "curl -O https://mohammadi.cv/assets/data/blog/calibration/llama3.1-8b.jsonl",
+      "calikit audit llama3.1-8b.jsonl --rescale 0,100"
+    ],
+    "source": "issues/004-how-sure-a-model-says-it-is.html"
+  },
+  {
+    "number": 5,
+    "date": "2026-09-12",
+    "title": "106,134 arena votes rank 55 models. They separate one neighbouring pair out of 54.",
+    "linkedin": "https://www.linkedin.com/pulse/106134-arena-votes-rank-55-models-separate-one-pair-out-mohammadi-iumae/",
+    "finding": "Closing the median gap on this board would take roughly 8.9 million votes at the current design, against the 106 thousand collected.",
+    "package": "arenakit",
+    "repository": "https://github.com/mohammadi-hadi/arenakit",
+    "post": "https://mohammadi.cv/blog/what-arena-votes-can-and-cannot-order/",
+    "commands": [
+      "pip install arenakit",
+      "arenakit demo --out results"
+    ],
+    "source": "issues/005-what-arena-votes-can-order.html"
+  },
+  {
+    "number": 6,
+    "date": "2026-09-19",
+    "title": "533 of 4,873 real experiments had a significant winner. 134 survived being counted.",
+    "linkedin": "https://www.linkedin.com/pulse/533-4873-real-experiments-had-significant-winner-134-being-mohammadi-5mphe/",
+    "finding": "Of 4,873 real A/B tests, 533 produced a significant winner. Chance alone would have produced about 244 of them.",
+    "package": "abkit",
+    "repository": "https://github.com/mohammadi-hadi/abkit",
+    "post": "https://mohammadi.cv/blog/4873-experiments-and-the-winners-curse/",
+    "commands": [
+      "pip install abkit",
+      "abkit demo --out results"
+    ],
+    "source": "issues/006-experiments-and-the-winners-curse.html"
+  }
+]

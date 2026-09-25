@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekend Learning</title>
+<meta name="description" content="Every issue of Weekend Learning, a newsletter on how LLM evaluation breaks: one finding every two weeks, every number recomputed, and an hour you can run yourself.">
+<meta name="author" content="Hadi Mohammadi">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://mohammadi.cv/weekend-learning/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Weekend Learning">
+<meta property="og:title" content="Weekend Learning">
+<meta property="og:description" content="One finding every two weeks on how LLM evaluation breaks, every number recomputed, and an hour you can run yourself.">
+<meta property="og:url" content="https://mohammadi.cv/weekend-learning/">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<main class="col hub">
+
+<img class="hub-logo" src="assets/icon.svg" alt="" width="64" height="64">
+<h1>Weekend Learning</h1>
+
+<p class="standfirst">Weekend Learning is my LinkedIn newsletter on how LLM evaluation breaks. Every two weeks it takes one finding, recomputes every number in it from the data, and ends with an hour you can spend running the same check yourself.</p>
+
+<p>I'm Hadi Mohammadi. I did my PhD in natural language processing and explainable AI at Utrecht University, and I work on AI and data science in the Netherlands.</p>
+
+<p><a href="https://www.linkedin.com/newsletters/weekend-learning-7044258763238731776/">Subscribe on LinkedIn</a> to get each new issue on the Saturday it comes out. Below is every issue so far, newest first, with the command its hour starts from. The packages are MIT licensed and archived with a DOI, and they're all on <a href="https://mohammadi.cv/software/">the software page</a> of my site.</p>
+
+<h2 id="issues">Issues</h2>
+
+<ol class="issues" reversed>
+<li>
+<p class="kicker">Issue 6 · 19 September 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/533-4873-real-experiments-had-significant-winner-134-being-mohammadi-5mphe/">533 of 4,873 real experiments had a significant winner. 134 survived being counted.</a></h3>
+<p>Of 4,873 real A/B tests, 533 produced a significant winner. Chance alone would have produced about 244 of them.</p>
+<pre><code>pip install abkit
+abkit demo --out results</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/533-4873-real-experiments-had-significant-winner-134-being-mohammadi-5mphe/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/4873-experiments-and-the-winners-curse/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/abkit">abkit on GitHub</a></li>
+</ul>
+</li>
+<li>
+<p class="kicker">Issue 5 · 12 September 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/106134-arena-votes-rank-55-models-separate-one-pair-out-mohammadi-iumae/">106,134 arena votes rank 55 models. They separate one neighbouring pair out of 54.</a></h3>
+<p>Closing the median gap on this board would take roughly 8.9 million votes at the current design, against the 106 thousand collected.</p>
+<pre><code>pip install arenakit
+arenakit demo --out results</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/106134-arena-votes-rank-55-models-separate-one-pair-out-mohammadi-iumae/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/what-arena-votes-can-and-cannot-order/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/arenakit">arenakit on GitHub</a></li>
+</ul>
+</li>
+<li>
+<p class="kicker">Issue 4 · 5 September 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/three-models-rated-own-confidence-constant-beat-all-hadi-mohammadi-hvh3e/">Three models rated their own confidence. A constant beat all three.</a></h3>
+<p>One of my models said 95 on 878 of its 1,000 answers and was right on 79% of them.</p>
+<pre><code>pip install calikit
+curl -O https://mohammadi.cv/assets/data/blog/calibration/llama3.1-8b.jsonl
+calikit audit llama3.1-8b.jsonl --rescale 0,100</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/three-models-rated-own-confidence-constant-beat-all-hadi-mohammadi-hvh3e/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/ask-a-model-how-sure-it-is/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/calikit">calikit on GitHub</a></li>
+<li><a href="https://mohammadi.cv/calikit/">Try it in the browser</a></li>
+</ul>
+</li>
+<li>
+<p class="kicker">Issue 3 · 29 August 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/humaneval-catches-real-3-point-gap-one-time-four-hadi-mohammadi-fvxqe/">HumanEval catches a real 3-point gap about one time in four</a></h3>
+<p>Even at a 90% baseline, its floor is six points: the smallest true gap it catches four times in five.</p>
+<pre><code>pip install abeval
+abeval power --baseline 0.75 --delta 0.03</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/humaneval-catches-real-3-point-gap-one-time-four-hadi-mohammadi-fvxqe/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/what-a-benchmark-can-tell-apart/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/abeval">abeval on GitHub</a></li>
+<li><a href="https://mohammadi.cv/abeval/">Try it in the browser</a></li>
+</ul>
+</li>
+<li>
+<p class="kicker">Issue 2 · 22 August 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/27-28-emotions-goemotions-fall-below-reliability-floor-hadi-mohammadi-r4ofe/">27 of the 28 emotions in GoEmotions fall below the reliability floor</a></h3>
+<p>Given the per-rater reliability actually observed, you would need roughly 13 raters per item to produce aggregated labels that are 0.8 reliable. The dataset averages 3.6, which projects to 0.52.</p>
+<pre><code>pip install raterkit
+raterkit report ratings.jsonl --out audit</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/27-28-emotions-goemotions-fall-below-reliability-floor-hadi-mohammadi-r4ofe/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/the-labels-under-the-benchmark/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/raterkit">raterkit on GitHub</a></li>
+</ul>
+</li>
+<li>
+<p class="kicker">Issue 1 · 16 August 2026</p>
+<h3><a href="https://www.linkedin.com/pulse/my-llm-judge-picked-whichever-answer-came-first-91-time-mohammadi-b9qae/">My LLM judge picked whichever answer came first, 91% of the time</a></h3>
+<p>The part I didn't expect: two of the three never once called a tie between two identical answers.</p>
+<pre><code>pip install judgekit
+judgekit report judge.jsonl --out audit</code></pre>
+<ul class="ways">
+<li><a href="https://www.linkedin.com/pulse/my-llm-judge-picked-whichever-answer-came-first-91-time-mohammadi-b9qae/">Read the issue</a></li>
+<li><a href="https://mohammadi.cv/blog/what-an-llm-judge-actually-does/">The long version</a></li>
+<li><a href="https://github.com/mohammadi-hadi/judgekit">judgekit on GitHub</a></li>
+</ul>
+</li>
+</ol>
+
+<h2 id="persian">The Persian sister is for beginners</h2>
+
+<p><bdi lang="fa" dir="rtl">«یادگیری آخر هفته»</bdi> is the Persian sister of this newsletter, written for people starting out. Every two weeks, on Fridays, it explains one basic idea from machine learning and language models in plain Persian, with an exercise that needs nothing installed. Many of its readers are in Iran on slow and expensive connections, so every lesson also works offline once it's downloaded.</p>
+
+<p>The two take turns, so each weekend brings one of them. The Persian lessons have <a href="https://mohammadi.cv/weekend-learning-fa/">their own page</a>, and the newsletter is <a href="https://www.linkedin.com/newsletters/7508807306889863168/">on LinkedIn</a>. The rest of my writing is <a href="https://mohammadi.cv/">on my site</a>.</p>
+
+</main>
+
+<footer class="site-foot">
+<div class="col">
+<p><a href="https://mohammadi.cv/">Hadi Mohammadi</a></p>
+</div>
+</footer>
+
+</body>
+</html>
