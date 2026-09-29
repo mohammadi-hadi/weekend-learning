@@ -91,5 +91,14 @@
       "abkit demo --out results"
     ],
     "source": "issues/006-experiments-and-the-winners-curse.html"
+  },
+  {
+    "number": 7,
+    "date": "2026-09-26",
+    "title": "\"Not bad\" is 98% negative to the classifier on my site. \"Not good\" is 61% positive.",
+    "linkedin": "https://www.linkedin.com/pulse/bad-98-negative-classifier-my-site-good-61-positive-mohammadi-phd-tvode/",
+    "finding": "I made 373 one-word edits, on the page's ten self-test sentences and 140 simple ones I wrote. 147 flipped the verdict. 37 flipped it the wrong way, and all 37 were antonyms swapped in right after a negator.",
+    "browser": "https://mohammadi.cv/playground/",
+    "source": "issues/007-not-good-not-bad.html"
   }
 ]

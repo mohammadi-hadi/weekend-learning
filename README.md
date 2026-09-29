@@ -10,6 +10,7 @@ I'm Hadi Mohammadi. I did my PhD in natural language processing and explainable 
 
 | # | Date | Issue | Package | Long version |
 |---|---|---|---|---|
+| 7 | 26 Sep 2026 | ["Not bad" is 98% negative to the classifier on my site. "Not good" is 61% positive.](https://www.linkedin.com/pulse/bad-98-negative-classifier-my-site-good-61-positive-mohammadi-phd-tvode/) |  |  |
 | 6 | 19 Sep 2026 | [533 of 4,873 real experiments had a significant winner. 134 survived being counted.](https://www.linkedin.com/pulse/533-4873-real-experiments-had-significant-winner-134-being-mohammadi-5mphe/) | [abkit](https://github.com/mohammadi-hadi/abkit) | [on my site](https://mohammadi.cv/blog/4873-experiments-and-the-winners-curse/) |
 | 5 | 12 Sep 2026 | [106,134 arena votes rank 55 models. They separate one neighbouring pair out of 54.](https://www.linkedin.com/pulse/106134-arena-votes-rank-55-models-separate-one-pair-out-mohammadi-iumae/) | [arenakit](https://github.com/mohammadi-hadi/arenakit) | [on my site](https://mohammadi.cv/blog/what-arena-votes-can-and-cannot-order/) |
 | 4 | 5 Sep 2026 | [Three models rated their own confidence. A constant beat all three.](https://www.linkedin.com/pulse/three-models-rated-own-confidence-constant-beat-all-hadi-mohammadi-hvh3e/) | [calikit](https://github.com/mohammadi-hadi/calikit) | [on my site](https://mohammadi.cv/blog/ask-a-model-how-sure-it-is/) |
