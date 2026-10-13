@@ -100,5 +100,22 @@
     "finding": "I made 373 one-word edits, on the page's ten self-test sentences and 140 simple ones I wrote. 147 flipped the verdict. 37 flipped it the wrong way, and all 37 were antonyms swapped in right after a negator.",
     "browser": "https://mohammadi.cv/playground/",
     "source": "issues/007-not-good-not-bad.html"
+  },
+  {
+    "number": 8,
+    "date": "2026-10-10",
+    "title": "A ranker 0.036 better on labels loses on production's clicks. The position correction can't show it wins.",
+    "linkedin": "https://www.linkedin.com/pulse/ranker-0036-better-labels-loses-productions-clicks-mohammadi-phd-mmu8e/",
+    "finding": "At this spread, confirming the corrected gain would take 13,216 queries. The label gain needs 288, and the wrong verdict from counting clicks needs only 42, which is why it looks so sure of itself.",
+    "package": "rankkit",
+    "repository": "https://github.com/mohammadi-hadi/rankkit",
+    "browser": "https://mohammadi.cv/rankkit/",
+    "commands": [
+      "git clone --depth 1 https://github.com/mohammadi-hadi/rankkit",
+      "cd rankkit",
+      "rankkit compare examples/run_a.jsonl examples/run_b.jsonl",
+      "rankkit bias examples/clicks.jsonl examples/run_b.jsonl"
+    ],
+    "source": "issues/008-clicks-crown-production.html"
   }
 ]
