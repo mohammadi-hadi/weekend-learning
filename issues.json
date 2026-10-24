@@ -117,5 +117,18 @@
       "rankkit bias examples/clicks.jsonl examples/run_b.jsonl"
     ],
     "source": "issues/008-clicks-crown-production.html"
+  },
+  {
+    "number": 9,
+    "date": "2026-10-24",
+    "title": "Swapping the three words a heatmap blames flips 54% or 43% of a sentiment model's verdicts, depending on the heatmap",
+    "linkedin": "https://www.linkedin.com/pulse/swapping-three-words-heatmap-blames-flips-54-43-hadi-mohammadi-phd-vxhke/",
+    "finding": "Occlusion and the sampled surrogate pick the same top word in 63% of sentences and the same top three in 13%, so they can't both be right about which three words mattered most.",
+    "package": "explainkit",
+    "repository": "https://github.com/mohammadi-hadi/explainkit",
+    "commands": [
+      "pip install \"explainkit[transformers,shap] @ git+https://github.com/mohammadi-hadi/explainkit@6a3bf77\" datasets"
+    ],
+    "source": "issues/009-swap-the-blamed-words.html"
   }
 ]

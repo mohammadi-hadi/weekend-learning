@@ -10,6 +10,7 @@ I'm Hadi Mohammadi. I did my PhD in natural language processing and explainable 
 
 | # | Date | Issue | Package | Long version |
 |---|---|---|---|---|
+| 9 | 24 Oct 2026 | [Swapping the three words a heatmap blames flips 54% or 43% of a sentiment model's verdicts, depending on the heatmap](https://www.linkedin.com/pulse/swapping-three-words-heatmap-blames-flips-54-43-hadi-mohammadi-phd-vxhke/) | [explainkit](https://github.com/mohammadi-hadi/explainkit) |  |
 | 8 | 10 Oct 2026 | [A ranker 0.036 better on labels loses on production's clicks. The position correction can't show it wins.](https://www.linkedin.com/pulse/ranker-0036-better-labels-loses-productions-clicks-mohammadi-phd-mmu8e/) | [rankkit](https://github.com/mohammadi-hadi/rankkit) |  |
 | 7 | 26 Sep 2026 | ["Not bad" is 98% negative to the classifier on my site. "Not good" is 61% positive.](https://www.linkedin.com/pulse/bad-98-negative-classifier-my-site-good-61-positive-mohammadi-phd-tvode/) |  |  |
 | 6 | 19 Sep 2026 | [533 of 4,873 real experiments had a significant winner. 134 survived being counted.](https://www.linkedin.com/pulse/533-4873-real-experiments-had-significant-winner-134-being-mohammadi-5mphe/) | [abkit](https://github.com/mohammadi-hadi/abkit) | [on my site](https://mohammadi.cv/blog/4873-experiments-and-the-winners-curse/) |
