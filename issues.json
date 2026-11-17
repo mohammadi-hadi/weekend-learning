@@ -130,5 +130,13 @@
       "pip install \"explainkit[transformers,shap] @ git+https://github.com/mohammadi-hadi/explainkit@6a3bf77\" datasets"
     ],
     "source": "issues/009-swap-the-blamed-words.html"
+  },
+  {
+    "number": 10,
+    "date": "2026-11-07",
+    "title": "Three Dutch master's I checked want 15, 42 or 100 credits in named subjects",
+    "linkedin": "https://www.linkedin.com/pulse/three-dutch-masters-i-checked-want-15-42-100-credits-mohammadi-phd-dwzhe/",
+    "finding": "A certificate from an online machine learning course fills none of their lines, however good the course was.",
+    "source": "issues/010-read-the-admission-page.html"
   }
 ]
